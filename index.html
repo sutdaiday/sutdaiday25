@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUTD Research Day</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SUTD AI Day</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#introduction">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://forms.office.com/r/Neeu7abXUq">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<header class="banner">
+    <video autoplay loop muted playsinline class="banner-video">
+        <source src="images/banner-video.mp4" type="video/mp4">
+    </video>
+    <div class="banner-overlay"></div>
+    <!-- <div class="banner-text">
+        Your Banner Text Here
+    </div> -->
+</header>
+    <!-- <div class="container-fluid banner text-center">
+    </div> -->
+    <section id="introduction" class="container text-center">
+        <marquee direction="left" behavior="scroll" scrollamount="5" style="font-size: 2rem; color: red; margin-bottom: 20px;">
+            Note: The agenda has been updated. Please register again to book your slot.
+        </marquee>
+        <h1>Welcome to SUTD AI DAY</h1>
+        <p>
+            We're delighted to announce the SUTD AI Day, a half-day event scheduled for <b>Friday, April 25, 2025</b>. This premier gathering will bring together leading figures from academia and industry to explore cutting-edge innovations in artificial intelligence. Featuring focused keynote sessions on open, language-specific, safe, and factual large language models, along with emerging trends in AI safety and specialization, the event provides an exceptional platform for exchanging ideas, fostering collaborations, and inspiring future developments in AI research.
+        </p>
+        <!-- Button Wrapper for Left Alignment -->
+        <div class="text-start">
+            <a href="https://forms.office.com/r/Uq2KJsvXzV" target="_blank" class="register-btn">Register Now</a>
+        </div>
+        <!-- Centered Image -->
+        <img src="images/aiday-orig.jpeg" alt="SUTD AI Day Banner" class="img-fluid my-3 mx-auto d-block">
+    </section>
+    
+    
+   
+    
+    <section id="agenda" class="container my-5">
+        <h2>Agenda</h2>
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>02:00 - 02:45 PM</td>
+                    <td>Keynote Session 1</td>
+                </tr>
+                <tr>
+                    <td>02:45 - 03:00 PM</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>03:00 - 03:45 PM</td>
+                    <td>Keynote Session 2</td>
+                </tr>
+                <tr>
+                    <td>03:45 - 04:00 PM</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>04:00 - 04:45 PM</td>
+                    <td>Keynote Session 3</td>
+                </tr>
+                <tr>
+                    <td>04:45 - 05:00 PM</td>
+                    <td>Closing Remarks</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+     
+
+    <section id="keynote" class="container my-5">
+        <h2>Keynote Speakers</h2>
+    
+        <!-- Speaker 1 -->
+        <div class="row my-4 align-items-start">
+            <!-- Left Column: Image and Professor Name -->
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <img src="images/Preslav.jpg" alt="Speaker 1" class="img-fluid" 
+                     style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+                <p class="mt-2 text-center">
+                    <a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/" target="_blank" 
+                       style="color: white; font-weight: bold;">
+                        Prof. Preslav Nakov
+                    </a>
+                </p>
+            </div>
+            <!-- Right Column: Talk Title, Abstract & Speaker's Bio -->
+            <div class="col-md-9">
+                <h4><strong>
+                    Towards Truly Open, Language-Specific, Safe, Factual, and Specialized Large Language Models
+                </strong></h4>
+                <p style="text-align: justify;">
+                    <strong>Abstract:</strong> First, we will argue for the need for fully transparent open-source large language models (LLMs), and we will describe the efforts of MBZUAI's Institute on Foundation Models (IFM) towards that based on the LLM360 initiative. Second, we will argue for the need for language-specific LLMs, and we will share our experience from building Jais, the world's leading open Arabic-centric foundation and instruction-tuned large language model, Nanda, our open-weights Hindi LLM, Sherkala, our open-weights Kazakh LLM, and some other models. Third, we will argue for the need for safe LLMs, and we will present Do-Not-Answer, a dataset for evaluating the guardrails of LLMs, which is at the core of the safety mechanisms of our LLMs. Forth, we will argue for the need for factual LLMs, we will discuss the factuality challenges that LLMs pose. We will then present some recent relevant tools for addressing these challenges developed at MBZUAI: (i) OpenFactCheck, a framework for fact-checking LLM output, for building customized fact-checking systems, and for benchmarking LLMs for factuality, (ii) LM-Polygraph, a tool for predicting an LLM's uncertainty in its output using cheap and fast uncertainty quantification techniques, and (iii) LLM-DetectAIve, a tool for machine-generated text detection. Finally, we will argue for the need for specialized models, and we will present the zoo of LLMs currently being developed at MBZUAI's IFM.
+                </p>
+                <p style="text-align: justify;">
+                    <strong>Speaker's Bio:</strong> Preslav Nakov is Professor and Department Chair for NLP at the Mohamed bin Zayed University of Artificial Intelligence. He is part of the core team at MBZUAI's Institute for Foundation Models that developed Jais, the world's best open-source Arabic-centric LLM, Nanda, the world's best open-weights Hindi model, Sherkala, the world's best open-weights Kazakh model, and LLM360, the first truly open LLM (open weights, open data, and open code). Previously, he was Principal Scientist at the Qatar Computing Research Institute, HBKU, where he led the Tanbih mega-project, developed in collaboration with MIT, which aims to limit the impact of "fake news", propaganda and media bias by making users aware of what they are reading, thus promoting media literacy and critical thinking. He received his PhD degree in Computer Science from the University of California at Berkeley, supported by a Fulbright grant. He is Chair of the European Chapter of the Association for Computational Linguistics (EACL), Secretary of ACL SIGSLAV, and Secretary of the Truth and Trust Online board of trustees. Formerly, he was PC chair of ACL 2022, and President of ACL SIGLEX. He is also member of the editorial board of several journals including Computational Linguistics, TACL, ACM TOIS, IEEE TASL, IEEE TAC, CS&L, NLE, AI Communications, and Frontiers in AI. He authored a Morgan & Claypool book on Semantic Relations between Nominals, two books on computer algorithms, and 250+ research papers. He received a Best Paper Award at ACM WebSci'2022, a Best Long Paper Award at CIKM'2020, a Best Resource Paper Award at EACL'2024, a Best Demo Paper Award (Honorable Mention) at ACL'2020, a Best Task Paper Award (Honorable Mention) at SemEval'2020, a Best Poster Award at SocInfo'2019, and the Young Researcher Award at RANLPâ€™2011. He was also the first to receive the Bulgarian President's John Atanasoff award, named after the inventor of the first automatic electronic digital computer. His research was featured by over 100 news outlets, including Reuters, Forbes, Financial Times, CNN, Boston Globe, Aljazeera, DefenseOne, Business Insider, MIT Technology Review, Science Daily, Popular Science, Fast Company, The Register, WIRED, and Engadget, among others.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Speaker 2 -->
+        <div class="row my-4 align-items-start">
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <img src="images/Paul.jpg" alt="Speaker 2" class="img-fluid" 
+                     style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+                <p class="mt-2 text-center">
+                    <a href="https://pliang279.github.io/" target="_blank" 
+                       style="color: white; font-weight: bold;">Prof. Paul Liang</a>
+                </p>
+            </div>
+            <div class="col-md-9">
+                <h4><strong>TBH</strong></h4>
+                <p style="text-align: justify;"><strong>Abstract:</strong> TBH</p>
+                <p style="text-align: justify;"><strong>Speaker's Bio:</strong> Paul Liang is an Assistant Professor at the MIT Media Lab and MIT EECS. His research advances the foundations of multisensory artificial
+                    intelligence to enhance the human experience. He is a recipient of the MIT Sony Career Development Chair Professorship, Forbes 30 under 30 in Science,
+                    CMU School of Computer Science Distinguished Dissertation Award, Siebel Scholars Award, Waibel Presidential Fellowship, Facebook PhD Fellowship,
+                    Center for ML and Health Fellowship, Rising Stars in Data Science, and 4 best paper awards. Outside of research, he received the
+                    Alan J. Perlis Graduate Student Teaching Award for developing new courses on multimodal machine learning.</p>
+            </div>
+        </div>
+    
+        <!-- Speaker 3 -->
+        <div class="row my-4 align-items-start">
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <img src="images/hl.png" alt="Speaker 3" class="img-fluid" 
+                     style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+                <p class="mt-2 text-center">
+                    <a href="https://hwaranlee.github.io/" target="_blank" 
+                       style="color: white; font-weight: bold;">Prof. Hwaran Lee</a>
+                </p>
+            </div>
+            <div class="col-md-9">
+                <h4><strong>TBH</strong></h4>
+                <p style="text-align: justify;"><strong>Abstract:</strong> TBH</p>
+                <p style="text-align: justify;"><strong>Speaker's Bio:</strong> Professor Hwaran Lee is an Assistant Professor at Sogang University in the Department of Artificial Intelligence and Computer Science Engineering. Her research is dedicated to understanding humanity and society to further the development of human-like and trustworthy artificial intelligence. Focusing on building safe and reliable Large Language Models, her work encompasses constructing safety datasets, benchmarks, and evaluation metrics; advancing controllable language generation; and addressing LLM security through adversarial attack analysis and red-teaming, along with developing innovative safety alignment and learning methods. Professor Lee earned her Ph.D. in Electrical Engineering from the Korea Advanced Institute of Science and Technology (KAIST) in 2018 under the guidance of Professor Soo-Young Lee, following her B.S. in Mathematical Science from KAIST in 2012. Before joining Sogang University, she served as a research scientist at SK T-Brain from 2018 to 2021 and as a lead research scientist at NAVER AI Lab from 2021 to 2025.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="organizers" class="organizers container my-5">
+        <h2 class="text-center">Organizers</h2>
+        
+        <!-- University Logo -->
+        <div class="d-flex justify-content-center">
+            <img src="images/sutd-logo.png" alt="SUTD Logo" style="width: 300px; height: auto;">
+        </div>
+        
+        <!-- Organizers' Images in Circular Form with Names -->
+        <div class="d-flex justify-content-center flex-wrap mt-4">
+            <div class="text-center mx-2">
+                <img src="images/d.png" alt="Organizer 1" class="organizer-img">
+                <p>Dorien Herremans</p>
+            </div>
+            <!-- <div class="text-center mx-2">
+                <img src="images/s.png" alt="Organizer 2" class="organizer-img">
+                <p>Sudipta Chattopadhyay</p>
+            </div> -->
+            <div class="text-center mx-2">
+                <img src="images/sj.png" alt="Organizer 3" class="organizer-img">
+                <p>Soujanya Poria</p>
+            </div>
+            <div class="text-center mx-2">
+                <img src="images/roy.png" alt="Organizer 4" class="organizer-img">
+                <p>Roy Lee</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <style>
+        .organizer-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            margin: 35px;
+        }
+    </style>
+    
+    
+      
+      
+      <section id="sponsors" class="organizers container my-5">
+        <h2>Partners</h2>
+        <div class="organizers-logos d-flex justify-content-between align-items-center">
+          <img src="images/sutd-logo.png" alt="Third Logo" style="width: 300px; height: 150px;">
+          <img src="images/IMDA.png" alt="Second Logo" style="width: 300px; height: 100px;">
+          <img src="images/MDDI.png" alt="Third Logo" style="width: 300px; height: 150px;">
+        </div>
+      </section>
+        
+    </section>
+
+    <section id="location" class="container my-5">
+        <h2>Event Location</h2>
+        <p>The event will take place at the Singapore University of Technology and Design (SUTD).</p>
+        
+        <div class="map-container">
+            <iframe 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7604186068666!2d103.9637413153116!3d1.3412254990361368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1aa2cfa5cf15%3A0x86b9095c41e241f3!2sSingapore%20University%20of%20Technology%20and%20Design!5e0!3m2!1sen!2ssg!4v1629987442679!5m2!1sen!2ssg">
+            </iframe>
+        </div>
+    </section>
+    
+    
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="footer">
+    <p>© 2025 SUTD AI Day | <a href="https://forms.office.com/r/Neeu7abXUq">Contact Us</a></p>
+</footer>
+</html>
