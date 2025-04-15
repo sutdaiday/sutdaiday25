@@ -10,7 +10,7 @@ body {
     background: linear-gradient(120deg, #002147, #71afe2);
     color: #fff;
     overflow-x: hidden;
-    padding-top: 80px; /* Adjust if your navbar height is different */
+    padding-top: 120px; /* Adjust if your navbar height is different */
 }
 
 /* Bootstrap Navbar Customization */
