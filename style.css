@@ -10,6 +10,7 @@ body {
     background: linear-gradient(120deg, #002147, #71afe2);
     color: #fff;
     overflow-x: hidden;
+    padding-top: 80px; /* Adjust if your navbar height is different */
 }
 
 /* Bootstrap Navbar Customization */
@@ -52,7 +53,7 @@ body {
     padding-bottom: 0 !important;
 }
 
-.banner-video {
+/* .banner-video {
     position: absolute;
     top: 0;
     left: 50%;
@@ -60,10 +61,10 @@ body {
     width: 100%;
     height: auto;
     /* min-height: 100vh; */
-    object-fit: cover;
+  /*  object-fit: cover;
     z-index: 0;
     clip-path: inset(0 0 30% 0); /* Crops bottom 15% of the video */
-}
+/* } */ 
 
 .banner-text {
     position: relative;
